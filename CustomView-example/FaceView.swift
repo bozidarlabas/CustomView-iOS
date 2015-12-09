@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class FaceView: UIView
 {
     var lineWidth: CGFloat = 3 { didSet { setNeedsDisplay() } }
@@ -37,7 +38,7 @@ class FaceView: UIView
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()
         
-        let smiliness = 0.75
+        let smiliness = -0.75
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
     }
