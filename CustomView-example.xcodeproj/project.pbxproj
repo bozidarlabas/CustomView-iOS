@@ -12,6 +12,8 @@
 		D457C39C1C18EB3F00E903ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D457C39A1C18EB3F00E903ED /* Main.storyboard */; };
 		D457C39E1C18EB3F00E903ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D457C39D1C18EB3F00E903ED /* Assets.xcassets */; };
 		D457C3A11C18EB3F00E903ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D457C39F1C18EB3F00E903ED /* LaunchScreen.storyboard */; };
+		D457C3A91C18EB5000E903ED /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457C3A81C18EB5000E903ED /* HappinessViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		D457C3AB1C18EB6400E903ED /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457C3AA1C18EB6400E903ED /* FaceView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D457C39D1C18EB3F00E903ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D457C3A01C18EB3F00E903ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D457C3A21C18EB3F00E903ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D457C3A81C18EB5000E903ED /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HappinessViewController.swift; path = ../HappinessViewController.swift; sourceTree = "<group>"; };
+		D457C3AA1C18EB6400E903ED /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		D457C3951C18EB3F00E903ED /* CustomView-example */ = {
 			isa = PBXGroup;
 			children = (
+				D457C3A81C18EB5000E903ED /* HappinessViewController.swift */,
 				D457C3961C18EB3F00E903ED /* AppDelegate.swift */,
 				D457C3981C18EB3F00E903ED /* ViewController.swift */,
 				D457C39A1C18EB3F00E903ED /* Main.storyboard */,
 				D457C39D1C18EB3F00E903ED /* Assets.xcassets */,
 				D457C39F1C18EB3F00E903ED /* LaunchScreen.storyboard */,
 				D457C3A21C18EB3F00E903ED /* Info.plist */,
+				D457C3AA1C18EB6400E903ED /* FaceView.swift */,
 			);
 			path = "CustomView-example";
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D457C3991C18EB3F00E903ED /* ViewController.swift in Sources */,
+				D457C3A91C18EB5000E903ED /* HappinessViewController.swift in Sources */,
 				D457C3971C18EB3F00E903ED /* AppDelegate.swift in Sources */,
+				D457C3AB1C18EB6400E903ED /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
