@@ -19,6 +19,8 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         //3. Conroller sets itself as the delegate of the View by setting the delegate property dataSource (because this class implements FaceViewDataSource protocol)
         didSet{
             faceView.dataSource = self
+            //scale: - : is because scale takes argument
+            faceView.addGestureRecognizer(UIPinchGestureRecognizer(target: faceView, action: "scale:")) //pinch on face view, action is non private method in faceview that i can call to handle it
         }
     }
     

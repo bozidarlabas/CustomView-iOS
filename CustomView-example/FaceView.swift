@@ -29,6 +29,15 @@ class FaceView: UIView
     //weak means that this will not be keep in memory
     weak var dataSource: FaceViewDataSource?
     
+    func scale(gesture: UIPinchGestureRecognizer){
+        //adjust scale when pinch moves
+        if gesture.state == .Changed{
+            scale *= gesture.scale
+            gesture.scale = 1
+        }
+        
+    }
+    
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
     }
