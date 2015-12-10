@@ -8,6 +8,12 @@
 
 import UIKit
 
+//1. Created delegation protocol - defines what the view wants from controller to take care of
+protocol FaceViewDataSource{
+    func smillinessForFaceView(sender: FaceView) -> Double?   //send FaceView object as parameter and return smilliness property as string optional
+    
+}
+
 @IBDesignable
 class FaceView: UIView
 {
@@ -25,6 +31,7 @@ class FaceView: UIView
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
     
+    
     override func drawRect(rect: CGRect)
     {
         let facePath = UIBezierPath(
@@ -41,6 +48,7 @@ class FaceView: UIView
         bezierPathForEye(.Left).stroke()
         bezierPathForEye(.Right).stroke()
         
+        //This data will be sent to view
         let smiliness = -0.75
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
