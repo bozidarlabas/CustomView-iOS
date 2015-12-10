@@ -38,9 +38,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="happy" id="xMU-8a-lh4">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="happpy" id="5pY-0T-CUw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7T-wt-mGZ">
@@ -57,9 +55,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="nothing" id="e6f-gZ-chz">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="nothing" id="Sl7-wt-Che"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl5-tF-iJf">
@@ -76,9 +72,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="sad" id="4bw-Io-Yae">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="9ev-kc-yqC" kind="showDetail" identifier="sad" id="bag-aA-1c6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -175,7 +169,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-126" y="346"/>
+            <point key="canvasLocation" x="302" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eue-rh-euF">
@@ -198,6 +192,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9Uv-8g-UTY"/>
+        <segue reference="Sl7-wt-Che"/>
     </inferredMetricsTieBreakers>
 </document>
