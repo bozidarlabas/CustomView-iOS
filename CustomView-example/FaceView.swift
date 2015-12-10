@@ -8,8 +8,9 @@
 
 import UIKit
 
+//class means that this protocol can be only imlemented by class
 //1. Created delegation protocol - defines what the view wants from controller to take care of
-protocol FaceViewDataSource{
+protocol FaceViewDataSource: class{
     func smillinessForFaceView(sender: FaceView) -> Double?   //send FaceView object as parameter and return smilliness property as string optional
     
 }
@@ -24,13 +25,16 @@ class FaceView: UIView
     @IBInspectable
     var scale: CGFloat = 0.90 { didSet { setNeedsDisplay() } }
     
+    //2. Created a delegate property in the View whose type is FaceViewDataSource delegation protocol
+    //weak means that this will not be keep in memory
+    weak var dataSource: FaceViewDataSource?
+    
     var faceCenter: CGPoint {
         return convertPoint(center, fromView: superview)
     }
     var faceRadius: CGFloat {
         return min(bounds.size.width, bounds.size.height) / 2 * scale
     }
-    
     
     override func drawRect(rect: CGRect)
     {
@@ -49,7 +53,10 @@ class FaceView: UIView
         bezierPathForEye(.Right).stroke()
         
         //This data will be sent to view
-        let smiliness = -0.75
+        //self is like this in java
+        //operator ?? - if code from left is not nil then use that, else use 0.0
+        //3. Using delegate property in the View to get/do things it can't own or control
+        let smiliness = dataSource?.smillinessForFaceView(self) ?? 0.0
         let smilePath = bezierPathForSmile(smiliness)
         smilePath.stroke()
     }
