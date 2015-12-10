@@ -8,7 +8,7 @@
         <!--Psychologist-->
         <scene sceneID="IRO-Yi-TmO">
             <objects>
-                <viewController id="jEg-km-slQ" customClass="PsychologistViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jEg-km-slQ" customClass="PsychologistViewController" customModule="CustomView_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U6t-Hh-xKi"/>
                         <viewControllerLayoutGuide type="bottom" id="jdT-kh-wjU"/>
@@ -128,7 +128,7 @@
         <!--Happiness View Controller-->
         <scene sceneID="zvU-fp-fif">
             <objects>
-                <viewController id="9ev-kc-yqC" customClass="HappinessViewController" customModule="Psychologist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9ev-kc-yqC" customClass="HappinessViewController" customModule="CustomView_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mkI-UF-m5a"/>
                         <viewControllerLayoutGuide type="bottom" id="igD-Oe-T4g"/>
@@ -137,7 +137,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jom-dN-BIe" customClass="FaceView" customModule="Psychologist" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jom-dN-BIe" customClass="FaceView" customModule="CustomView_example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

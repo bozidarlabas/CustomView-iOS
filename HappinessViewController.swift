@@ -60,7 +60,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
     
     //Function that will update UI
     func updateUI(){
-        faceView.setNeedsDisplay() //redraw faceView
+        faceView?.setNeedsDisplay() //redraw faceView
     }
     
     func smillinessForFaceView(sender: FaceView) -> Double? {
