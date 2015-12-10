@@ -24,9 +24,31 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
         }
     }
     
+    private struct Constants{
+        static let HappinessGestureScale: CGFloat = 4
+    }
+    
+    
+    //UIPanGestureRecognizer implemented from StryBoard
+    @IBAction func changeHappiness(sender: UIPanGestureRecognizer) {
+        //pan is moving up and down
+        switch sender.state{
+        case .Ended: fallthrough
+        case .Changed:
+            //change happiness property
+            let translation = sender.translationInView(faceView)
+            let happinessChange = -(Int)(translation.y / Constants.HappinessGestureScale)
+            if happinessChange != 0 {
+                happiness += happinessChange
+                sender.setTranslation(CGPointZero, inView: faceView)
+            }
+        default: break
+        }
+        
+    }
     
     //0 = very sad, 100 = ectastic
-    //property listener
+    //property listener which is useful for updating UI because its called every time when property is changed (happiness property)
     var happiness: Int = 75{
         didSet{
             //if happpiness did set new value then check if this value is between 0 and 100
