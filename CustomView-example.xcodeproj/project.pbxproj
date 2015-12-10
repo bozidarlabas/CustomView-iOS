@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4096D281C19E293002E14BC /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4096D271C19E293002E14BC /* PsychologistViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		D457C3971C18EB3F00E903ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D457C3961C18EB3F00E903ED /* AppDelegate.swift */; };
 		D457C39C1C18EB3F00E903ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D457C39A1C18EB3F00E903ED /* Main.storyboard */; };
 		D457C39E1C18EB3F00E903ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D457C39D1C18EB3F00E903ED /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4096D271C19E293002E14BC /* PsychologistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
 		D457C3931C18EB3F00E903ED /* CustomView-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CustomView-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D457C3961C18EB3F00E903ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D457C39B1C18EB3F00E903ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		D457C3951C18EB3F00E903ED /* CustomView-example */ = {
 			isa = PBXGroup;
 			children = (
+				D4096D271C19E293002E14BC /* PsychologistViewController.swift */,
 				D457C3A81C18EB5000E903ED /* HappinessViewController.swift */,
 				D457C3961C18EB3F00E903ED /* AppDelegate.swift */,
 				D457C39A1C18EB3F00E903ED /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4096D281C19E293002E14BC /* PsychologistViewController.swift in Sources */,
 				D457C3A91C18EB5000E903ED /* HappinessViewController.swift in Sources */,
 				D457C3971C18EB3F00E903ED /* AppDelegate.swift in Sources */,
 				D457C3AB1C18EB6400E903ED /* FaceView.swift in Sources */,
@@ -289,6 +293,7 @@
 				D457C3A71C18EB3F00E903ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
